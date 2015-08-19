@@ -7,6 +7,10 @@
     <groupId>ninja.eivind</groupId>
     <artifactId>programming-intro</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-haas</module>
+    </modules>
 
 
 </project>
