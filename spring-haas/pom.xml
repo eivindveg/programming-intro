@@ -58,10 +58,9 @@
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>0.5.1</version>
                 <configuration>
-                    <appName>spring-haas</appName>
+                    <appName>haas-spring</appName>
                     <processTypes>
-                        <web>java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/*
-                            no.swact.action.Application
+                        <web>java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/* no.swact.action.Application
                         </web>
                     </processTypes>
                 </configuration>
