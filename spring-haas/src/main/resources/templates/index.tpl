@@ -10,7 +10,7 @@ layout 'layouts/main.tpl',
                     input(type: 'text', 'ng-model': 'name')
                 }
                 div(class: "small-12 medium-4 columns") {
-                    a(class: "button success radius expand", 'ng-href': '''/ {{greeting.route}} / {{name}} ''', "Greet")
+                    a(class: "button success radius expand", 'ng-href': '''/{{greeting.route}}/{{name}}''', "Greet")
                 }
             }
 
