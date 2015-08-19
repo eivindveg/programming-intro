@@ -12,7 +12,11 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
+        List<Person> list = getPersons();
+        printUpcomingBirthdays(list);
+    }
 
+    private static List<Person> getPersons() {
         List<Person> list = new ArrayList<>();
         try(Collector collector = new Collector(System.in)) {
             do {
@@ -23,7 +27,10 @@ public class Application {
             System.out.println("We've encountered a problem: " + e.getMessage());
             System.out.println("The application will now exit after printing the values we successfully collected.");
         }
+        return list;
+    }
 
+    private static void printUpcomingBirthdays(final List<Person> list) {
         list.stream()
                 .sorted(getPersonComparator())
                 .forEach(person -> {
