@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
 
 @Controller
 @RequestMapping("")
@@ -14,8 +15,8 @@ public class HelloController {
         return new ModelAndView("hello", "name", name);
     }
 
-    @RequestMapping("/hero/{name}")
-    public ModelAndView hero(@PathVariable String name) {
-        return new ModelAndView("hero", "name", name);
+    @RequestMapping("/")
+    public ModelAndView index() {
+        return new ModelAndView("index");
     }
 }
