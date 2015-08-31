@@ -19,6 +19,11 @@ public class HelloController {
         return new ModelAndView("aloha", "name", name);
     }
 
+    @RequestMapping("/hero/{name}")
+    public ModelAndView hero(@PathVariable String name) {
+        return new ModelAndView("hero", "name", name);
+    }
+
     @RequestMapping("/")
     public ModelAndView index() {
         return new ModelAndView("index");

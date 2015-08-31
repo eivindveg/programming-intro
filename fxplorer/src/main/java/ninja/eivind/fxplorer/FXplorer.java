@@ -1,4 +1,4 @@
-package ninja.eivind;
+package ninja.eivind.fxplorer;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;
